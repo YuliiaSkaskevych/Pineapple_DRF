@@ -1,5 +1,4 @@
 from django.contrib import admin
-from rest_framework.authtoken.admin import TokenAdmin
 from .models import Post, Comment
 
 
@@ -20,4 +19,4 @@ class CommentAdmin(admin.ModelAdmin):
     date_hierarchy = "publish"
     raw_id_fields = ['author', ]
 
-TokenAdmin.raw_id_fields = ['user']
+
