@@ -18,5 +18,3 @@ class CommentAdmin(admin.ModelAdmin):
     ordering = ['author']
     date_hierarchy = "publish"
     raw_id_fields = ['author', ]
-
-
